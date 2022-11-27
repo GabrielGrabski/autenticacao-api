@@ -14,6 +14,11 @@ spring:
       show-sql: true
   application:
     name: autenticacao-api
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: http://localhost:8080/realms/grabas/protocol/openid-connect/certs
 
 eureka:
   client:
